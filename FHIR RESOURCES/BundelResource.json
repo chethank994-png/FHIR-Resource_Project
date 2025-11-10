@@ -1,0 +1,60 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:5419fd86-643d-4126-a45f-9505481875e2",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "001",
+        "name": [
+          {
+            "use": "official",
+            "family": "Reed",
+            "given": [
+              "Evelyn"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "555-300-4000",
+            "use": "work"
+          },
+          {
+            "system": "email",
+            "value": "e.reed@clinic.example.com",
+            "use": "work"
+          }
+        ],
+        "gender": "male"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fa459ebc-aa72-4b24-b842-f8ab615b17e4",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "pr-role123",
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/001",
+          "display": "Dr Evelyn Reed"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "158978000",
+                "display": "Dental consultant"
+              }
+            ],
+            "text": "Dental consultant"
+          }
+        ]
+      }
+    }
+  ]
+}
+

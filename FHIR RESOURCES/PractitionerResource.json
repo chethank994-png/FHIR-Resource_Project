@@ -1,0 +1,24 @@
+{
+  "resourceType": "Practitioner",
+  "id": "001",
+  "name":[
+    {
+      "use":"official",
+      "family":"Reed",
+      "given":["Evelyn"]
+     }
+    ],
+   "telecom":[
+     {
+       "system":"phone",
+       "value":"555-300-4000",
+       "use":"work"
+      },
+      {
+       "system":"email",
+       "value":"e.reed@clinic.example.com",
+       "use":"work"
+      }
+     ],
+    "gender":"male"
+}
